@@ -4,24 +4,32 @@
 
 <div id="lunaradio" style="width:100%; height:100%;background: #000000 url(js/portada.jpg) bottom / cover no-repeat;">loading...</div>			
 
+
 <script>
-$("#lunaradio").lunaradio({
-userinterface: "big", 
-backgroundcolor: "",
+$("#player").lunaradio({
+userinterface: "big", //big o small
+backgroundcolor: "rgba(9,15,25,0.6)",
 fontcolor: "#ffffff",
-hightlightcolor: "#FF6767", 
-fontname: "Unica One", 
+hightlightcolor: "#b60c0f", 
+fontname: "Unica One",
 googlefont: "Unica+One&display=swap", 
 fontratio: "0.4", 
-radioname: "SUPRA FM", 
-scroll: "true", 
-coverimage: "js/logo.jpg",
-onlycoverimage: "false",
-coverstyle: "animated",
+radioname: "LA EXPLOSIVA MUSICAL", //nombre de radio
+scroll: "true",
+autoplay: "true", 
+coverimage: "img/logo.png",
+onlycoverimage: "false", //true para mostrar solo logo radio
+coverstyle: "animated",//circle o square o hits1
 usevisualizer: "real", 
-visualizertype: "4", 
-metadatatechnic: "",
-ownmetadataurl: "", 
+visualizeropacity: "1.0",
+multicolorvisualizer: "true",
+color1: "#00FF00",
+color2: "#ffff00",
+color3: "#FF1F6F",
+color4: "#FF1F6F",
+visualizertype: "2", 
+usestreamcorsproxy: "false", //true o false
+corsproxy: "", 
 streamurl:"https://sp.totalstreaming.net:8072", 
 streamtype: "shoutcast2", //shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
 icecastmountpoint: "/live",
@@ -39,3 +47,4 @@ volume: "100",
 debug: "true",
 });
 </script>
+
