@@ -30,7 +30,50 @@ color4: "#FF1F6F",
 visualizertype: "2", 
 usestreamcorsproxy: "false", //true o false
 corsproxy: "", 
-streamurl:"http://192.168.1.220:8000", 
+streamurl:"div id="player"></div>
+<script>
+$("#player").lunaradio({
+userinterface: "big", //big o small
+backgroundcolor: "rgba(9,15,25,0.6)",
+fontcolor: "#ffffff",
+hightlightcolor: "#b60c0f", 
+fontname: "Unica One",
+googlefont: "Unica+One&display=swap", 
+fontratio: "0.4", 
+radioname: "LA EXPLOSIVA MUSICAL", //nombre de radio
+scroll: "true",
+autoplay: "true", 
+coverimage: "img/logo.png",
+onlycoverimage: "false", //true para mostrar solo logo radio
+coverstyle: "animated",//circle o square o hits1
+usevisualizer: "real", 
+visualizeropacity: "1.0",
+multicolorvisualizer: "true",
+color1: "#00FF00",
+color2: "#ffff00",
+color3: "#FF1F6F",
+color4: "#FF1F6F",
+visualizertype: "2", 
+usestreamcorsproxy: "false", //true o false
+corsproxy: "", 
+streamurl:"https://sp.totalstreaming.net:8072", 
+streamtype: "shoutcast2", //shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
+icecastmountpoint: "/live",
+shoutcastpath: "/stream",
+streamid: "1", 
+streamsuffix: "", 
+radionomyid: "", 
+radionomyapikey: "",
+radiojarid: "",  
+radiocoid: "",
+itunestoken: "1000lIPN",
+metadatainterval: "5000", 
+displayliveicon: "true",
+volume: "100",
+debug: "true",
+});
+</script>
+", 
 streamtype: "shoutcast1", //shoutcast2, icecast2, radiozeno, radionomy, radiojar, radioco
 icecastmountpoint: "/live",
 shoutcastpath: "",
